@@ -1,0 +1,25 @@
+# Sample log: timestamp | EVENT | user | ip | RESULT | description
+2026-03-10 02:30:15 | LOGIN | bob | 192.168.1.11 | SUCCESS | Login successful
+2026-03-10 09:00:12 | LOGIN | alice | 192.168.1.10 | SUCCESS | Login successful
+2026-03-10 09:05:41 | LOGIN | bob | 192.168.1.11 | SUCCESS | Login successful
+2026-03-10 09:20:03 | LOGIN | carol | 192.168.1.12 | FAILURE | Wrong password
+2026-03-10 09:20:30 | LOGIN | carol | 192.168.1.12 | SUCCESS | Login successful
+2026-03-10 10:15:00 | FILE_ACCESS | alice | 192.168.1.10 | SUCCESS | Opened report.xlsx
+this line is not a valid log entry
+2026-03-10 11:00:10 | LOGIN | admin | 198.51.100.7 | FAILURE | Wrong password
+2026-03-10 11:00:20 | LOGIN | admin | 198.51.100.7 | FAILURE | Wrong password
+2026-03-10 11:00:30 | LOGIN | admin | 198.51.100.7 | FAILURE | Wrong password
+2026-03-10 11:00:40 | LOGIN | admin | 198.51.100.7 | FAILURE | Wrong password
+2026-03-10 11:00:50 | LOGIN | admin | 198.51.100.7 | FAILURE | Wrong password
+2026-03-10 | LOGIN | bob
+2026-03-10 12:30:00 | LOGIN | dave | 192.168.1.13 | SUCCESS | Login successful
+2026-03-10 13:00:01 | LOGIN | root | 203.0.113.50 | FAILURE | Invalid user
+2026-03-10 13:00:08 | LOGIN | admin | 203.0.113.50 | FAILURE | Wrong password
+2026-03-10 13:00:15 | LOGIN | test | 203.0.113.50 | FAILURE | Invalid user
+2026-03-10 13:00:22 | LOGIN | guest | 203.0.113.50 | FAILURE | Invalid user
+2026-03-10 13:00:30 | LOGIN | root | 203.0.113.50 | FAILURE | Wrong password
+2026-03-10 13:00:40 | LOGIN | alice | 203.0.113.50 | FAILURE | Wrong password
+2026-03-10 13:00:50 | LOGIN | alice | 203.0.113.50 | SUCCESS | Login successful
+2026-13-45 99:99:99 | LOGIN | bob | 192.168.1.11 | SUCCESS | Bad timestamp
+2026-03-10 14:00:00 | LOGIN | bob | 999.1.1.1 | SUCCESS | Bad IP
+2026-03-10 14:30:00 | LOGOUT | alice | 192.168.1.10 | N/A | Session closed
